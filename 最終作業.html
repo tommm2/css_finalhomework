@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS最終作業</title>
+    <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+    <meta name="description" content="HTML & CSS Final Project">
+    <meta name="keywords" content="HTML, CSS, Final Project">
+
+    <meta property="og:title" content="HTML & CSS Final Project" />
+    <meta property="og:description" content="HTML & CSS Final Project By Sinya">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="網址" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+.HexSchoolWebpage{
+    width: 1050px;
+    margin: auto;
+    
+    
+}
+
+.website{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    
+    }
+.website li{
+    margin-left:10px;
+}
+.website .fb a{
+    text-decoration: none;
+    color:#8b9cc2;
+}
+.website .twitter a{
+    text-decoration: none;
+    color: #62c8f0;
+}
+.menu{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu h1 a{
+    display: block;
+    background-image:url(https://i.postimg.cc/wTvYJtzX/logo.png);
+    height: 50px;
+    width: 195px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+}
+.menu ul li a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #66e0c2;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.introduction{
+    display: flex;
+    padding-top: 10px;
+    
+}
+.introduction .item{
+    width: 300px;
+    margin:0 5px;
+    text-align: left;
+    border: 1px solid #f1f1f1;
+    box-shadow:0 2px 2px #e4e4e4;
+    padding:20px;
+}
+.introduction .item span{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: 1000;
+    color:#5c5c5c;
+    margin-bottom: 10px;
+}
+.introduction .item p{
+    line-height: 1.5;
+}
+.introduction .item ul li{
+    margin:5px 0 5px 0;
+}
+
+
+.course table{
+    width: 900px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+.course span{
+    padding:50px 0 30px 0;
+    display: block;
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+    color:#333333;
+}
+.course tr{
+    border-bottom: 1px solid #dddddd;
+}
+.course th{
+    background: #f7f7f7;
+    color: #333333;
+    font-weight: 1000;
+    padding: 10px;
+}
+.course td{
+    padding: 10px;
+}
+.course .focus{
+    color:#77d0ba;
+    font-weight: 800;
+}
+
+.form{
+    margin: 50px 0 10px 0;
+    padding: 25px;
+    width: 1000px;
+    background:linear-gradient(#00694f,#00936e);
+}
+.form span{
+    display: block;
+    line-height: 1.5;
+    font-size: 30px;
+    font-weight:900;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.form .data{
+    display: flex;
+    
+}
+.form label{
+    color: #ffffff;
+
+}
+.form textarea{
+    border-radius: 5px;
+}
+.form input{
+    margin-bottom:15px;
+    border-radius: 5px;
+}
+.form form input[type="submit"]{
+    display: flex;
+    float: right;
+}
+.form form{
+    padding-left: 40px;
+    
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.footer ul li{
+    color: #e12d80;
+}
+.footer ul li span{
+    color:#858585;
+}
+</style>
+<body>
+<div class="HexSchoolWebpage">
+
+    <div class="header">
+        <ul class="website">
+            <li class="fb"><img src="https://i.postimg.cc/VkR181nJ/facebook-Icon.png" alt=""><a href="https://www.facebook.com/hexschool">粉絲團</a></li>
+            <li class="twitter"><img src="https://i.postimg.cc/vZQFXjkb/twitter-Icon.png" alt=""><a href="https://twitter.com/hexschool1">追隨我們</a></li>
+        </ul>
+        <div class="menu">
+            <h1><a href="https://www.hexschool.com/">HEX SCHOOL</a></h1>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">產品介紹</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="https://i.postimg.cc/pXwxHWNK/banner.png" alt="" width="1050px">
+    </div>
+
+    <div class="introduction">
+        <div class="item">
+            <img src="https://i.postimg.cc/fRddzRVs/html.png" alt="">
+            <span>Html 5 基礎教學</span>
+            <p>主流前端網站設計的基礎就是在六角學院，在這裡不是填鴨式教學，而是透過實際的範例，了解政倔的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方式。</p>
+        </div>
+        <div class="item">
+            <img src="https://i.postimg.cc/Qtf94ByQ/rwd.png" alt="">
+            <span>響應式網站設計</span>
+            <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的錢況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</p>
+        </div>
+        <div class="item">
+            <img src="https://i.postimg.cc/yYggj8XR/jQuery.png" alt="">
+            <span>jQuery 實戰教學</span>
+            <p>本課程有以下特色</p>
+            <ul>
+                <li>．了解變數的使用方法</li>
+                <li>．學習並操作 DOM</li>
+                <li>．學習基本數學運算方法</li>
+                <li>．套件的操作及運用</li>
+            </ul>
+        </div>
+    </div>
+    <div class="course" align="center">
+        <span>線上及實體課程差異</span>
+        <table>
+            <tr>
+                <th>項目</th>
+                <th>Hex School 線上課程</th>
+                <th>一般線上課程</th>
+                <th>實體課程</th>
+            </tr>
+            <tr>
+                <td>費用</td>
+                <td class="focus">較低</td>
+                <td class="focus">較低</td>
+                <td>較高</td>
+            </tr>
+            <tr>
+                <td>學習效果</td>
+                <td>一般</td>
+                <td class="focus">較低</td>
+                <td class="focus">很好</td>
+            </tr>
+            <tr>
+                <td>Code review</td>
+                <td class="focus">有</td>
+                <td>無</td>
+                <td>不一定</td>
+            </tr>
+            <tr>
+                <td>課程更新速度</td>
+                <td class="focus">普通</td>
+                <td class="focus">普通</td>
+                <td>較慢</td>
+            </tr>
+            <tr>
+                <td>多次複習</td>
+                <td class="focus">可</td>
+                <td>可</td>
+                <td>不可</td>
+            </tr>
+            <tr>
+                <td>字幕</td>
+                <td class="focus">有</td>
+                <td>不一定</td>
+                <td>板書</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="form">
+        <span>對我們課程有興趣嗎?<br>歡迎留下您的資料</span>
+        <div class="data">
+            <textarea name="" id="" cols="65" rows="15"></textarea>
+            <form action="index.html">
+                <label for="name">姓名</label>
+                <br>
+                <input type="text" id="name" placeholder="請輸入姓名" size="60px">
+                <br>
+                <label for="number">電話</label>
+                <br>
+                <input type="text" id="number" placeholder="請輸入電話" size="60px">
+                <br>
+                <label for="mail">信箱</label>
+                <br>
+                <input type="text" id="mail" placeholder="請輸入信箱" size="60px">
+                <br>
+                <input type="submit" value="送出">        
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <img src="https://i.postimg.cc/sgHMt3tY/footer-Logo.png" alt="">
+        <ul>
+            <li><span>聯絡我們 : </span>hexschool@gmail.com</li>
+            <li><span>電話 : </span>0999123456</li>
+        </ul>
+    </div>
+
+</div>
+</body>
+</html>
