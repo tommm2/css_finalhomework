@@ -4,13 +4,13 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS finalhomework</title>
+    <title>HTML & CSS最終作業</title>
     <link rel="icon" href="https://www.hexschool.com/favicon.ico">
-    <meta name="description" content="HTML & CSS finalhomework">
-    <meta name="keywords" content="HTML, CSS, finalhomework">
+    <meta name="description" content="HTML & CSS Final Project">
+    <meta name="keywords" content="HTML, CSS, Final Project">
 
-    <meta property="og:title" content="HTML & CSS finalhomework" />
-    <meta property="og:description" content="HTML & CSS finalhomework">
+    <meta property="og:title" content="HTML & CSS Final Project" />
+    <meta property="og:description" content="HTML & CSS Final Project By Sinya">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="網址" />
 
@@ -35,19 +35,36 @@
 .website li{
     margin-left:10px;
 }
+
+/*.fb與.twitter之間的線條*/
+.website .fb::after{
+    content: "|";
+    color: grey;
+    margin-left: 8px;
+}
+
 .website .fb a{
+    
     text-decoration: none;
     color:#8b9cc2;
 }
+
+/*a連結動畫修改*/
 .website .fb a:hover{
-    text-decoration: underline;
+    transition:border-bottom 0.2s;
+    border-bottom: 4px solid #8b9cc2;
+    
 }
 .website .twitter a{
     text-decoration: none;
     color: #62c8f0;
 }
+
+/*a連結動畫修改*/
 .website .twitter a:hover{
-    text-decoration: underline;
+    transition:border-bottom 0.2s;
+    border-bottom: 4px solid #62c8f0;
+    
 }
 .menu{
     padding: 10px;
@@ -72,13 +89,37 @@
     text-decoration: none;
     color: #66e0c2;
 }
+
+/*a連結動畫修改*/
 .menu ul li a:hover{
-    text-decoration: underline;
+    transition:border-bottom 0.2s;
+    border-bottom: 4px solid #66e0c2;
 }
+
+/*.image上的字修改*/
+.image{ 
+    position: relative;
+    
+}
+.image-text{
+    box-sizing: border-box;
+    line-height: 1.5;
+    width: 1050px;
+    padding:  30px 0 30px 30px;
+    opacity: 80%;
+    position: absolute;
+    color: #ffff;
+    font-size: 30px;
+    background-color: #1e1e1d;
+    top: 30%;
+    
+}
+/*.image上的字修改*/
+
+
 .introduction{
     display: flex;
-    padding-top: 10px;
-    
+    padding-top: 10px; 
 }
 .introduction .item{
     width: 300px;
@@ -88,7 +129,7 @@
     box-shadow:0 2px 2px #e4e4e4;
     padding:20px;
 }
-.introduction .item span{
+.introduction .item h4{
     text-align: center;
     display: block;
     font-size: 24px;
@@ -99,17 +140,26 @@
 .introduction .item p{
     line-height: 1.5;
 }
-.introduction .item ul li{
-    margin:5px 0 5px 0;
+
+.introduction .item .dot{
+    padding-left: 20px;
+}
+
+/* 已用成list-style:disc 來呈現代替直接貼上文字． */
+.introduction .item .dot li{
+    list-style: disc;
+    line-height: 1.5;
 }
 
 
+/* 已將border設定刪掉 */
 .course table{
     width: 900px;
     text-align: left;
-    border: 1px solid #dddddd;
+    
 }
-.course span{
+
+.course h3{
     padding:50px 0 30px 0;
     display: block;
     font-size: 30px;
@@ -134,12 +184,13 @@
     font-weight: 800;
 }
 
+/* 已經寬度刪除 */
 .form{
     margin: 50px 0 10px 0;
     padding: 25px;
-    width: 1000px;
     background:linear-gradient(#00694f,#00936e);
 }
+
 .form span{
     display: block;
     line-height: 1.5;
@@ -154,20 +205,38 @@
     display: flex;
     
 }
+
+/* 已用block修改 */
 .form label{
+    display: block;
     color: #ffffff;
 
 }
+
+/* 已用width設定寬度 */
 .form textarea{
     border-radius: 5px;
+    width: 500px;
 }
 .form input{
+    display: block;
     margin-bottom:15px;
     border-radius: 5px;
 }
+
+/* 已將float改成margin-left */
 .form form input[type="submit"]{
-    float: right;
+    
+    margin-left: auto;
 }
+
+/* 已增加HOVER效果 */
+.form form input[type="submit"]:hover{
+    cursor:pointer;
+    background-color:#77d0ba;
+    color: #ffffff;
+}
+
 .form form{
     padding-left: 40px;
     
@@ -179,9 +248,20 @@
     justify-content: space-between;
     margin: 20px 0;
 }
-.footer ul li{
+
+
+.footer ul li a{
     color: #e12d80;
+    text-decoration: none;
 }
+.footer ul li a{
+    color: #e12d80;
+    text-decoration: none;
+}
+
+/* 已增加hover效果 */
+.footer ul li a:hover{color:#77d0ba;}
+
 .footer ul li span{
     color:#858585;
 }
@@ -205,34 +285,40 @@
     </div>
 
     <div class="image">
-        <img src="https://i.postimg.cc/pXwxHWNK/banner.png" alt="" width="1050px">
+        <img src="https://i.postimg.cc/pXwxHWNK/banner.png" width="1050">
+        <div class="image-text"><p>六角學院<br>讓您奠定良好的前端基礎</p></div>
     </div>
-
-    <div class="introduction">
-        <div class="item">
-            <img src="https://i.postimg.cc/fRddzRVs/html.png" alt="">
-            <span>Html 5 基礎教學</span>
+    
+    <!-- introduction改成ul,標題改成H4 -->
+    <ul class="introduction">
+        <li class="item">
+            <img src="https://i.postimg.cc/fRddzRVs/html.png">
+            <h4>Html 5 基礎教學</h4>
             <p>主流前端網站設計的基礎就是在六角學院，在這裡不是填鴨式教學，而是透過實際的範例，了解政倔的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方式。</p>
-        </div>
-        <div class="item">
-            <img src="https://i.postimg.cc/Qtf94ByQ/rwd.png" alt="">
-            <span>響應式網站設計</span>
+        </li>   
+        
+        <li class="item">
+            <img src="https://i.postimg.cc/Qtf94ByQ/rwd.png">
+            <h4>響應式網站設計</h4>
             <p>響 應 式 網 站 設 計(Responsive web design)，目前大多使用者均是以手機瀏覽的錢況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧。</p>
-        </div>
-        <div class="item">
-            <img src="https://i.postimg.cc/yYggj8XR/jQuery.png" alt="">
-            <span>jQuery 實戰教學</span>
+        </li>
+        
+        <li class="item">
+            <img src="https://i.postimg.cc/yYggj8XR/jQuery.png">
+            <h4>jQuery 實戰教學</h4>
             <p>本課程有以下特色</p>
-            <ul>
-                <li>．了解變數的使用方法</li>
-                <li>．學習並操作 DOM</li>
-                <li>．學習基本數學運算方法</li>
-                <li>．套件的操作及運用</li>
+            <ul class="dot">
+                <li>了解變數的使用方法</li>
+                <li>學習並操作 DOM</li>
+                <li>學習基本數學運算方法</li>
+                <li>套件的操作及運用</li>
             </ul>
-        </div>
-    </div>
+        </li>
+    </ul>
+
+    <!-- 已改成h3標籤 -->
     <div class="course" align="center">
-        <span>線上及實體課程差異</span>
+        <h3>線上及實體課程差異</h3>
         <table>
             <tr>
                 <th>項目</th>
@@ -282,20 +368,16 @@
     <div class="form">
         <span>對我們課程有興趣嗎?<br>歡迎留下您的資料</span>
         <div class="data">
-            <textarea name="" id="" cols="65" rows="15"></textarea>
+            <textarea></textarea>
             <form action="index.html">
                 <label for="name">姓名</label>
-                <br>
                 <input type="text" id="name" placeholder="請輸入姓名" size="60px">
-                <br>
+
                 <label for="number">電話</label>
-                <br>
                 <input type="text" id="number" placeholder="請輸入電話" size="60px">
-                <br>
+
                 <label for="mail">信箱</label>
-                <br>
                 <input type="text" id="mail" placeholder="請輸入信箱" size="60px">
-                <br>
                 <input type="submit" value="送出">        
             </form>
         </div>
@@ -305,8 +387,8 @@
     <div class="footer">
         <img src="https://i.postimg.cc/sgHMt3tY/footer-Logo.png" alt="">
         <ul>
-            <li><span>聯絡我們 : </span>hexschool@gmail.com</li>
-            <li><span>電話 : </span>0999123456</li>
+            <li><span>聯絡我們 : </span><a href="mailto:hexschool@gmail.com">hexschool@gmail.com</a></li>
+            <li><span>電話 : </span><a href="tel:+0999123456">0999123456</a></li>
         </ul>
     </div>
 
